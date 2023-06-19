@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Build a survey form using HTML</title>
+<style>
+body
+{
+background-color:#05c46b;
+font-family:Verdana;
+text-align:center;
+}
+form
+{
+background-color:#fff;
+max-width:500px;
+margin:50px auto;
+padding:30px 20px;
+box-shadow:2px 5px 10px rgba(0,0,00.5);
+}
+</style></head>
+<body bgcolor="Olive">
+<h1><b>Training Survey Form</b></h1>
+<form>
+<div>
+<label>Name</label>
+<input type="text" name="user_name" placeholder="enter your name"></label>
+</div>
+Email <input type="email" name="email_id" placeholder="enter your email"><br>
+<p></p>
+Age <input type="text" name="user_Age" placeholder="enter your age"><br>
+<p>which option best describes you?&nbsp;<select name="dropdown"></p>
+<option value="Student" selected>Student
+<option value="Intern">Intern
+<option value="Professional">Professional
+<option value="Other">Other
+</select>
+
+<div>
+<label>would you recommend MTICA to your friend?</label><br>
+<label for="recommand-1">
+<input type="radio"  
+      id="recommand-1" name="recommand">Yes</input>
+</label>
+<label for="recommand-2">
+<input type="radio"  
+      id="recommand-2" name="recommand">No</input>
+</label>
+<label for="recommand-3">
+<input type="radio"  
+      id="recommand-3" name="recommand">Maybe</input>
+</label>
+
+</div>
+
+<br/>
+<div>
+<label>Languages and Frameworks known  <small>(check all that apply)</small>
+</label><br/>
+<!--Input Type Checkbox-->
+<label for="inp-1">
+<input type="checkbox"
+   name="inp">C</input></label>
+<label for="inp-2">
+<input type="checkbox"
+name="inp">C++</input></label>
+<label for="inp-3">
+<input type="checkbox"
+  name="inp">C#</input></label>
+<label for="inp-4">
+<input type="checkbox"
+   name="inp">Java</input></label>
+<label for="inp-5">
+<input type="checkbox"
+      name="inp">Python</input></label>
+<label for="inp-6">
+<input type="checkbox"
+       name="inp">JavaScript</input></label>
+<label for="inp-7">
+<input type="checkbox"
+   name="inp">React</input></label>
+<label for="inp-8">
+<input type="checkbox"
+  name="inp">Angular</input></label>
+<label for="inp-9">
+<input type="checkbox"
+    name="inp">Django</input></label>
+<label for="inp-10">
+<input type="checkbox"
+    name="inp">Spring</input></label>
+</div>
+<br><p></p>
+<div>
+  <label for="comment">
+  Any comments or suggestions
+  </label>
+ <!--multi-line text input control-->
+<textarea  name="comment" id="comment"
+placeholder="Enter your comment here">
+</textarea>
+<div>
+
+<!--multi-line Text Input Control--><br>
+<button type="submit" value="submit">
+ submit
+</button>
+</form>
+</body>
+</html>
