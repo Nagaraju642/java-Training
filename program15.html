@@ -1,0 +1,30 @@
+<!doctype html><hml><head>
+<script>
+function naga()
+{
+var num1,num2,sum;
+
+num1=parseInt(document.getElementById("txtFirstNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+sum=num1+num2;
+document.getElementById("txtAnswer1").value=sum;
+sub=num1-num2;
+document.getElementById("txtAnswer2").value=sub;
+mul=num1*num2;
+document.getElementById("txtAnswer3").value=mul;
+div=num1/num2;
+document.getElementById("txtAnswer4").value=div;
+}
+</script>
+</head>
+<body>
+<p>First Number:<input id="txtFirstNumber"></p>
+<p>Second Number:<input id="txtSecondNumber"></p>
+<button onclick="naga()">Results</button>
+<p>Sum=<input id="txtAnswer1"></p>
+<p>Sub=<input id="txtAnswer2"></p>
+<p>Mul=<input id="txtAnswer3"></p>
+<p>Div=<input id="txtAnswer4"></p>
+</body>
+</html>
+
