@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback Form</title>
+  <style>
+/* Styling the body element i.e color, Font Alignment*/
+
+body{
+background-color : Green;
+font-family: verdana;
+text-align : center;
+}
+
+/*Styling the form (color,padding,shadow)*/
+form{
+background-color:#fff;
+max-width:600px;
+margin : 50px auto;
+padding : 30px 30px;
+box-shadow : 2px 5px 10px rgba(0,0,0,0.5);
+}
+
+/*Styling form-control class*/
+.form-control{
+text-align : left;
+margin-bottom : 10px;
+}
+
+/*Styling form control label*/
+.form-control label{
+display:block;
+margin-bottom:10px;
+}
+
+/*Styling form-control input,select,textarea*/
+.form-control input,
+.form-control select,
+.form-control textarea{
+border:1px solid #777;
+border-radius:2px;
+font-family : inherit;
+padding:10px;
+display:block;
+width:95%;
+}
+
+/*Styling form- control radio button checkbox*/
+.form-control input[type = "radio"],
+.form-control input[type="checkbox"]{
+display: inline-block;
+width:auto;
+}
+
+/*Styling Button*/
+button{
+background-color:blue;
+border: 1px solid blue;
+border-radius : 2px;
+font-family:inherit;
+font-size : 21px;
+display :block;
+width :8%;
+margin-top:50px;
+margin-bottom:20px;
+margin-left:27%;
+color:white;
+}
+  </style>
+ </head>
+
+
+
+ <body>
+ <form id = "form">
+ <div>
+ <h2>MTICA JUNE MCA Java Training Feedback Form</h2>
+ <h4>MTICA JUNE</h4>
+ <h5>MCA Java Training Feedback From</h5>
+ </div>
+ <div class = "form-control">
+<label for = "email" id = "label-email">Email</label>
+<!--input type Email-->
+<input type = "email"
+id = "email"
+placeholder = "enter your email"/>
+</div>
+ <p>* indicates required question</p>
+ </form>
+
+ <form>
+ <div>
+ <p>Trainer Name*</p>
+ <label for "recommend">
+<input type = "radio"id ="recommend"
+name = "recommend">&nbspPraveen Kumar</input>
+</label>
+ </div>
+ </form>
+
+ <form>
+
+ <div class = "form-control">
+<label for = "name" id = "name"> Student Name*</label>
+<!--input type text-->
+<input type = "text"
+id = "name"
+placeholder = "enter your name"/>
+</div>
+
+ </form>
+
+  <form>
+
+  <div class = "form-control">
+<label for = "rollno" id = "rollno"> Roll Number*</label>
+<!--input type text-->
+<input type = "text"
+id = "rollno"
+placeholder = "enter your rollnumber"/>
+</div>
+
+ </form>
+
+ <form>
+
+<div class = "form-control">
+
+<label>The trainer is knowledgeable</label><br/>
+<!--input type radio button-->
+<label for "recommend -1">
+<input type = "radio"    id ="recommend-1"
+name = "recommend">Strongly agree</input>
+</label>
+
+<label for "recommend -2">
+<input type = "radio"    id ="recommend-2"
+name = "recommend">Agree</input>
+</label>
+
+<label for "recommend -3">
+<input type = "radio"    id ="recommend-3"
+name = "recommend">Nutral</input>
+</label>
+
+<label for "recommend -3">
+<input type = "radio"    id ="recommend-3"
+name = "recommend">Disagree</input>
+</label>
+
+</div>
+
+ </form>
+
+ <form>
+
+<div class = "form-control">
+
+<label>Explained topics clearly with examples</label><br/>
+<!--input type radio button-->
+<label for "recommend -1">
+<input type = "radio"    id ="recommend-1"
+name = "recommend">Strongly agree</input>
+</label>
+
+<label for "recommend -2">
+<input type = "radio"    id ="recommend-2"
+name = "recommend">Agree</input>
+</label>
+
+<label for "recommend -3">
+<input type = "radio"    id ="recommend-3"
+name = "recommend">Nutral</input>
+</label>
+
+<label for "recommend -3">
+<input type = "radio"    id ="recommend-3"
+name = "recommend">Disagree</input>
+</label>
+
+</div>
+ </form>
+
+  <form>
+<div class = "form-control">
+
+<label>Adequate time is provided for questions & discussion and clearing doubts*</label><br/>
+<!--input type radio button-->
+<label for "recommend -1">
+<input type = "radio"    id ="recommend-1"
+name = "recommend">Strongly agree</input>
+</label>
+
+<label for "recommend -2">
+<input type = "radio"    id ="recommend-2"
+name = "recommend">Agree</input>
+</label>
+
+<label for "recommend -3">
+<input type = "radio"    id ="recommend-3"
+name = "recommend">Nutral</input>
+</label>
+
+<label for "recommend -3">
+<input type = "radio"    id ="recommend-3"
+name = "recommend">Disagree</input>
+</label>
+
+</div>
+ </form>
+
+  <form>
+<div class = "form-control">
+
+<label>How would you rate the training over all*</label><br/>
+<!--input type radio button-->
+<label for "recommend -1">
+<input type = "radio"    id ="recommend-1"
+name = "recommend">Excellent</input>
+</label>
+
+<label for "recommend -2">
+<input type = "radio"    id ="recommend-2"
+name = "recommend">Good</input>
+</label>
+
+<label for "recommend -3">
+<input type = "radio"    id ="recommend-3"
+name = "recommend">Fair</input>
+</label>
+
+<label for "recommend -3">
+<input type = "radio"    id ="recommend-3"
+name = "recommend">Poor</input>
+</label>
+</div>
+ </form>
+
+ <form>
+ <div class = "form-control">
+<label for = "comment">
+Any Feedback/Suggestions*
+</label>
+<!--multi line text input control-->
+<textarea name = "comment" id = "comment"
+placeholder = "Enter your suggestions here .....">
+</textarea>
+</div>
+ </form>
+
+ <button type = "submit" value ="submit">
+Submit
+</button>
+
+ </body>
+</html>
