@@ -1,26 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,
+initial-scale=1">
+<style>
+.container {
+position: relative;
+width: 50%;
+}
 
-<html><head><script>
-function validateform(){
-var name=document.myForm.txtName.value;
-var password=document.myForm.textPassword.value;
-if(name==null || name=="")
-{
-alert("Name can't be blank");
-return false;
+.image {
+display: block;
+width: 100%;
+height: auto;
 }
-else if(password.length<6)
-{
-alert("Password must be at least 6 characters long.");
-return false;
+.overlay {
+position: absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color: #008CBA;
 }
+
+.container:hover .overlay {
+opacity: 1;
 }
-</script>
+text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left:50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+</style>
 </head>
 <body>
-<form name="myForm"method="post">
-Name:<input type="text" name="txtName"></br>
-Password:<input type="password"name="txtPassword"></br>
-<input type="submit"value="register" onclick=validateform()>
-</form>
+
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+<img src="image1.jfif" alt="Avatar" class="image">
+<div class="overlay">
+<div class="text"> Hello World</div>
+</div>
+</div>
+
 </body>
 </html>
+

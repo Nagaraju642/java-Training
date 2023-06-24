@@ -1,19 +1,45 @@
+<!DOCTYPE html>
 <html>
-<body>
-<script type="text/javascript">
-var d=new Date()
-theDay=d.getDay();
-switch(theDay)
-{
-case 0: document.write("Sleepy Sunday"); break;
-case 1: document.write("Sleepy Monday"); break;
-case 2: document.write("Sleepy Tuesday"); break;
-case 3: document.write("Rainy Wednesday"); break;
-case 4: document.write("Sunny Thursday"); break;
-case 5: document.write("Finally Friday"); break;
-case 6: document.write("Super Saturday"); break;
-default:document.write(" I'm looking forward to this weekend!");
+<head>
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-</script>
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Dropdown img1</h2>
+<p>Move the mouse over the image below to open the dropdown content.</p>
+
+<div class="dropdown">
+  <img src="img1.jpg" alt="Cinque Terre" width="100" height="50">
+  <div class="dropdown-content">
+  <img src="img1.jpg" alt="Cinque Terre" width="300" height="200">
+  <div class="desc">Beautiful Cinque Terre</div>
+  </div>
+</div>
+
 </body>
 </html>
+
+
